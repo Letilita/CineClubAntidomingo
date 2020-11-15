@@ -1,0 +1,1038 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*  A continuación defino los templates de grilla para las distintas páginas html */
+
+/* Tamplate para el index */
+.contenedor1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0.5rem;
+    grid-template-areas: "head head"
+                        "nav nav "
+                        "tit tit "
+                        "card1 card1 "
+                        "card2 card3"
+                        "card4 card5 "
+                        "foot foot";
+    width: 98vw;
+    margin: auto;
+}
+ /* Uso mq para hacer responsive index */
+@media only screen and (max-width: 992px){
+    .contenedor1{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head"
+                            "nav "
+                            "tit "
+                            "card1"
+                            "card2"
+                            "card3"
+                            "card4 "
+                            "card5"
+                            "foot ";
+        width: 98vw;
+        margin: auto;
+    } 
+}
+
+/* Template para la página "Programación */
+.contenedor2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 0.5rem;
+    grid-template-areas: "head head head"
+                        "nav nav nav"
+                        "tit1 tit1 tit1"
+                        "peli1 peli2 peli3"
+                        ". mist .."
+                        "lin lin lin"
+                        "tit2 tit2 tit2"
+                        "cand1 cand2 cand3"
+                        "cand4 cand5 cand6"
+                        "vot vot vot"
+                        ". sug ."
+                        "foot foot foot";
+    width: 98vw;
+    margin: auto;
+}
+/* Uso mq para hacer responsive Programación para dispositivos medianos */
+@media only screen and (max-width: 992px){
+    .contenedor2{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head head "
+                            "nav nav"
+                            "tit1 tit1"
+                            "peli1 peli2"
+                            "peli3 mist"
+                            "lin lin"
+                            "tit2 tit2"
+                            "cand1 cand2"
+                            "cand3 cand4"
+                            "cand5 cand6"
+                            "vot vot"
+                            "sug sug"
+                            "foot foot";
+        width: 98vw;
+        margin: auto;
+
+}
+}
+/* Uso mq para hacer responsive Programación para dispositivos pequeños */
+@media only screen and (max-width: 600px){
+    .contenedor2{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head "
+                            "nav"
+                            "tit1"
+                            "peli1"
+                            "peli2"
+                            "peli3"
+                            "mist"
+                            "lin"
+                            "tit2"
+                            "cand1"
+                            "cand2"
+                            "cand3"
+                            "cand4"
+                            "cand5" 
+                            "cand6"
+                            "vot"
+                            "sug"
+                            "foot";
+        width: 98vw;
+        margin: auto;
+
+}
+}
+/* Template para la página "Contacto" */
+.contenedor3{
+    display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head "
+                            "nav"
+                            "cont"
+                            "foot";
+        width: 98vw;
+        margin: auto;
+}
+
+/* Template ára la página Reserva */
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-gap: 0.5rem;
+    grid-template-areas: "head head head"
+                            "nav nav nav"
+                            "tit tit tit"
+                            ". form ."                            
+                            "foot foot foot";
+    width: 98vw;
+    margin: auto;
+}
+/* Uso mq para hacer responsive Reserva para dispositivos medianos */
+@media only screen and (max-width: 992px){
+    .contenedor4{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head head head"
+                                "nav nav nav"
+                                "tit tit tit"
+                                ". form ."                            
+                                "foot foot foot";
+        width: 98vw;
+        margin: auto;
+    }
+}
+/* Uso mq para hacer responsive Reserva para dispositivos pequeños */
+@media only screen and (max-width: 600px){
+    .contenedor4{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas:   "head head head"
+                                "nav nav nav"
+                                "tit tit tit"
+                                "form form form"                            
+                                "foot foot foot";
+        width: 98vw;
+        margin: auto;
+    }
+}
+/* Template para la página Menu */
+.contenedor5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 0.5rem;
+    grid-template-areas: "head head head head"
+                        "nav nav nav nav"
+                        "tit tit tit tit "
+                        "tit1 tit1 tit1 tit1"
+                        "platPrinc platPrinc platPrinc platPrinc"
+                        "tit2 tit2 tit2 tit2"
+                        "plat1 plat2 plat3 plat4"
+                        "foot foot foot foot";
+    width: 98vw;
+    margin: auto;
+}
+@media only screen and (max-width: 992px){
+    .contenedor5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head head"
+                            "nav nav"
+                            "tit tit "
+                            "tit1 tit1"
+                            "platPrinc platPrinc"
+                            "tit2 tit2"
+                            "plat1 plat2"
+                            "plat3 plat4"
+                            "foot foot";
+        width: 98vw;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contenedor5{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head"
+                            "nav"
+                            "tit"
+                            "tit1"
+                            "platPrinc"
+                            "tit2"
+                            "plat1"
+                            "plat2"
+                            "plat3"
+                            "plat4"
+                            "foot";
+        width: 98vw;
+        margin: auto;
+    }
+}
+.contenedor6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas: "head head head head head head"
+                         "nav nav nav nav nav nav"
+                         "tit tit tit tit tit tit"
+                         "cand1 cand2 cand3 cand4 cand5 cand6"
+                         ". form form form form ."                            
+                         "foot foot foot foot foot foot";
+    width: 98vw;
+    margin: auto;
+}
+
+@media only screen and (max-width: 992px){
+    .contenedor6{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head head head"
+                                "nav nav nav"
+                                "tit tit tit"
+                                "cand1 cand2 cand3"
+                                "cand4 cand5 cand6"
+                                "form form form"                            
+                                "foot foot foot ";
+        width: 98vw;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contenedor6{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "head"
+                             "nav"
+                             "tit"
+                             "form"
+                             "cand1"
+                             "cand2"
+                             "cand3"
+                             "cand4"
+                             "cand5"
+                             "cand6"                                                            
+                             "foot";
+        width: 98vw;
+        margin: auto;
+    }
+}
+
+/* .logo{
+    width: 15%;
+    height: auto;
+    background-color: orange;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    padding:0%, 0%;
+    margin:0px;
+    box-shadow:2px 2px 3px rgb(255, 255, 255, 0.3);
+    
+}
+#logo{
+    padding:0;
+    margin:0;
+    width: 50%;
+    object-fit: contain;
+    
+    
+}
+ */
+
+/* Título del encabezado */
+ #titulo{
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.5rem double orange;
+    margin-bottom: 0.5rem;
+}
+/* Defino caja del encabezado */
+.encabezado{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Carter One', cursive;
+    font-size: 1.2rem;
+    width: 95%;
+    margin: auto;
+    /* border-bottom: 0.3rem dotted whitesmoke; */
+    border-top: 0.3rem dotted whitesmoke;
+    padding-top: 0.3rem;
+    grid-area: head;        
+}
+
+/* Defino el template de la barra de navegación */
+.navegador{
+    padding: 1% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a1 a2 a3 a5 a4";
+    width: 100%;
+    margin-top: 0;
+    grid-area: nav;
+    border-bottom: 0.2rem dotted whitesmoke;;
+
+}
+/* Usos MQ para hacer responsive la estructura del navegador */
+
+@media only screen and (max-width:600px){
+    .navegador{
+        padding: 1% 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a1 a1 a2 a2 a3 a3"
+                            "a5 a5 a5 a4 a4 a4";
+        grid-gap:0.5rem ;
+
+        width: 100%;
+        margin-top: 0;
+        grid-area: nav;
+        border-bottom: 0.2rem dotted whitesmoke;;
+}
+
+}
+
+
+@media only screen and (max-width:400px){
+    .navegador{
+        padding: 1% 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a1 a2"
+                            "a3 a5"
+                            "a4 a4";
+        grid-gap:0.5rem ;
+
+        width: 100%;
+        margin-top: 0;
+        grid-area: nav;
+        border-bottom: 0.2rem dotted whitesmoke;;
+}
+}
+
+/* Características de los a del navegador */
+nav{
+    background-color: black; 
+    text-align: center;    
+    
+}
+@media only screen and (max-width:600px){
+nav a{
+    background-color: black; 
+    text-align: center; 
+    border:0.05rem dotted orange; 
+    border-radius: 1%;
+    
+}
+}
+
+nav a{
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    color: whitesmoke;  
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a:hover{
+    color: orange;
+    border-bottom: 0.3rem dotted whitesmoke;
+}
+
+/* Defino las áreas de cada uno de los links de la barra de navegación */
+#a1{
+    grid-area: a1;
+}
+#a2{
+    grid-area: a2;
+}
+#a3{
+    grid-area: a3;
+}
+#a4{
+    grid-area: a4;
+}
+#a5{
+    grid-area: a5;
+}
+
+
+/* Características de las tarjetas de presentación dentro de index */
+.card{
+    display: flex;   
+    justify-content: space-between;       
+    background-size: cover;
+    background-position: left center;
+    background-image: linear-gradient(225, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3));
+   /*  margin: auto; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow:2px 2px 3px rgb(100, 65, 0, 0.5);
+    min-height: 40vh;
+    border-radius: 1%;
+}
+/* Defino las características de la zona donde aparecerá el texto dentro de las tarjetas */
+
+.textoCard{ 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 172px; /* Para que no quede muy pequeño en dispositivos más chicos */
+    background-color: rgb(255, 255, 255, 0.6);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    color: black;
+    font-weight: 700;
+    padding: auto;    
+    border-radius:1%;
+}
+
+/* Defino las áreas que ocuparán cada una de las tarjetas */
+#card1{
+    background: url(../Imágenes/marquesina2.JPG) black;
+    background-size: cover;
+    background-position: center ;
+    min-height: 40vh; 
+    grid-area: card1;  
+    width: 100%;  
+}
+#card2{
+    grid-area: card2;
+    background: url(../Imágenes/cine.JPG) black;
+    background-size: cover;
+    width: 100%;
+}
+#card3{
+    grid-area: card3;
+    width: 100%;
+    background: url(../Imágenes/guitarra.JPG) black;
+    background-size: cover;
+    display: flex;
+    flex-flow: row-reverse;
+
+}
+#card4{
+    grid-area: card4;
+    width: 100%;
+    background: url(../Imágenes/comida.JPG) black;
+    background-size: cover;
+}
+#card5{
+    grid-area: card5;
+    width: 100%;
+    background: url(../Imágenes/pochoclos.JPG) black;
+    background-size: cover;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+/* Defino el área de los títulos de las páginas (no del encabezado) 
+a excepción de la página programación que tiene dos títulos. */
+#tit{
+    grid-area: tit;
+}
+
+/* Defino el área de los títulos de la página de Programación */
+#tit1{
+    grid-area: tit1;
+}
+#tit2{
+    grid-area: tit2;
+}
+
+/* Defino las características de los títulos intermedios */
+h2{
+    width: 100%;
+    color: orange;
+    background-color: black;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 2rem;
+
+}
+h3{
+    color:black;
+    font-size: 1.5rem;
+    text-align: center;    
+}
+/* Acá hay un h3 que quiero que sea naranja */
+.naranja{
+    color: orange;
+}
+
+/* Defino las características de los botones que aparecen en todas las páginas */
+.boton{    
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    background-color: black;
+    border: 0.2rem double orange;
+    border-radius: 5%;
+    text-decoration: none;
+    color: whitesmoke;   
+    cursor: pointer;
+    padding: 0.5% 1%;
+    align-self: flex-end;       
+}
+/* Defino las características de los links dentro de los botones */
+.boton a{
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    background-color: black;
+    text-decoration: none;
+    color: whitesmoke;   
+    cursor: pointer;
+}
+.boton a:hover{
+    color: orange;
+    border-bottom: 0.1rem dotted orange;
+    border-color: whitesmoke;
+}
+
+/* Defino características del footer */
+footer{
+    color: whitesmoke;
+    border-bottom: 0.3rem dotted orange;
+    border-top: 0.3rem dotted orange;
+    text-align: center;
+    font-size: 1.2rem;
+    grid-area: foot;
+}
+footer a{
+    color: whitesmoke;
+    cursor: pointer;   
+}
+footer a:hover{
+    color:orange;
+}
+
+/* Características de los links en general de todas las páginas */
+a{
+    color: orange;
+    cursor: pointer;   
+}
+
+/* Defino las características de las tarjetas con las películas de la página Programación */
+.peli{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+}
+.peli h4{
+    color: whitesmoke;
+}
+.peli h3{
+    color: orange;
+}
+
+/* Defino las áreas de las tarjetas con películas */
+#peli1{
+    grid-area: peli1;
+}
+#peli2{
+    grid-area: peli2;
+}
+#peli3{
+    grid-area: peli3;
+}
+#misterio{
+    grid-area: mist;
+}
+
+/* Características particulares del botón de reserva */
+.botonReserva{
+    
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    background-color: black;
+    border: 0.2rem double orange;
+    border-radius: 5%;
+    text-decoration: none;
+    color: whitesmoke;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0.5rem;
+
+}
+.botonReserva a{
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    background-color: black;
+    text-decoration: none;
+    color: whitesmoke;   
+    cursor: pointer;
+    margin: auto;
+}
+.botonReserva a:hover{
+    color: orange;
+    border-bottom: 0.1rem dotted orange;
+    border-color: whitesmoke;
+}
+
+/* Defino tamaño de los iframes (donde se muestran los trailers) */
+iframe{
+    width: 98%;
+    height: auto;
+}
+/* Tamaño de la imágen de la peli misterio */
+#imgMist{
+    width: 70%;
+    height: auto;
+}
+/* La peli misterio tiene dos botones. Defino su disposición */
+.dosBotones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Para el listado de películas para votar en Programación */
+.grilla{
+    width: 98%;
+    grid-area: tab;   
+}
+/* línea que separa las dos secciones de Programación */
+.linea{
+    grid-area: lin;
+    width: 100%;
+    border-bottom: 0.3rem dotted whitesmoke;
+}
+/* Características del listado de pelis a votar */
+details > summary {
+    padding: 4px;
+    border: none;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  details > p {
+    color: orange;
+    border: none;   
+    padding: 4px;
+    margin: 0;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+  }
+/* Defino el área de las películas a votar  y los botones*/
+  #cand1{
+      grid-area: cand1;
+  }
+  #cand2{
+    grid-area: cand2;
+  }
+  #cand3{
+    grid-area: cand3;
+}
+#cand4{
+    grid-area: cand4;
+}
+#cand5{
+    grid-area: cand5;
+}
+#cand6{
+    grid-area: cand6;
+}
+#votar{
+    grid-area: vot;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#sugerencia{
+    grid-area: sug;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border: 0.5rem dotted white;
+    color: orange;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#sugerencia:hover{
+    color: whitesmoke;
+    
+}
+
+/* Características del div que contiene los datos del contacto y el mapa */
+#contacto{
+    width: 100%;
+    min-width: 200px;
+    grid-area:cont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+#mapa{
+    height: 25rem;
+}
+#contacto a{
+    color: whitesmoke;
+}
+#contacto a:hover{
+    color: orange;
+    text-decoration: none;
+}
+/* Formulario */
+legend{
+    color: whitesmoke;
+    font-size: 1.7rem;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+.form{
+    grid-area: form;
+    width: 100%;
+
+}
+.botonEnviar{
+    font-family: 'Carter One', cursive;
+    font-size: 1.0rem;
+    background-color: black;
+    border: 0.2rem double orange;
+    border-radius: 5%;
+    text-decoration: none;
+    color: whitesmoke;   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    width: 100%;
+    align-self: space-between;
+}
+input[type=submit]:hover{
+    color: orange;
+    border-bottom: 0.1rem dotted orange;
+    border-color: whitesm
+}
+input[type=text], input[type=email], input[type=tel], select, textarea{
+    width: 50%;
+    padding: 0.5rem;
+    color: whitesmoke;
+    background-color: black;
+    border: 0.1rem dotted whitesmoke;
+    transition: 0.4s ease-in-out;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, select:focus, textarea:focus{
+width: 90%;
+border:none;
+border:0.1rem dotted orange;
+background-color:rgb(245, 245, 245, 0.1);
+}
+label{
+    padding:0.5rem;
+    color:orange;
+}
+.blanco{
+    color: whitesmoke;
+}
+
+/* Escondo el checkbox para después poder darle estilo */
+input[type="checkbox"] {  
+    visibility: hidden;  
+}  
+ 
+input[type="checkbox"] + label:before { 
+    border: 0.08rem dotted whitesmoke; 
+    content: "\00a0";  
+    display: inline-block;  
+    font-size: 1rem;  
+    height: 1rem;  
+    margin: 0.5rem 1rem 0 0;  
+    padding: 0; 
+    vertical-align: center;  
+    width: 1rem;  
+    border-radius: 10%;
+    cursor: pointer;
+} 
+ 
+input[type="checkbox"]:checked + label:before { 
+ 
+    background: orange;  
+    color: whitesmoke; 
+    content: "\2713";  
+    text-align: center;  
+} 
+
+/* Escondo el radio para después poder darle estilo */
+input[type=radio]{
+    visibility: hidden;
+}
+input[type=radio] + label:before{
+    border: 0.08rem dotted whitesmoke; 
+    content: "\00a0";  
+    display: inline-block;  
+    font-size: 1rem;  
+    height: 1rem;  
+    margin: 0.5rem 1rem 0 0;  
+    padding: 0; 
+    vertical-align: center;  
+    width: 1rem;  
+    border-radius: 100%;
+    cursor: pointer;
+}
+input[type=radio]:checked + label:before{
+    content: "\00a0";
+    background-color: orange;
+}
+
+input[type=text]:checked{
+    background-color: black;
+    color: white;
+}
+option{
+    background-color: black;
+    color: whitesmoke;
+}
+/* Las siguientes líneas no me funcionan */
+/* select:focus > option:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+select > option:hover{
+    box-shadow: 0 0 10px 100px #FED20F inset;
+    transition: all .2s ease-in-out;
+} */
+
+/* Página Menú */
+#platPrinc{
+    /* background: url(../guiso.jpg) black; */
+    grid-area: platPrinc;
+    border-radius: 1%;
+    margin-top: 2rem;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+    width: 99%;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "text img";
+    grid-gap: 1rem;
+}
+/* Para hacer responsive la página de Menú */
+@media only screen and (max-width: 992px){
+    .opaco{
+        background-color: rgba(8, 8, 8, 0.4);
+        width: 100%;  
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .alinbajo{
+        align-self: flex-end;
+    }
+    
+}
+@media only screen and (max-width: 992px){
+    #platPrinc{
+        /* background: url(../guiso.jpg) black; */
+        grid-area: platPrinc;
+        border-radius: 1%;
+        margin-top: 2rem;
+        box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+        width: 99%;
+        padding:0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "text"
+                            "img";
+        grid-gap: 1rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    #platPrinc{
+        /* background: url(../guiso.jpg) black; */
+        grid-area: platPrinc;
+        border-radius: 1%;
+        margin-top: 2rem;
+        box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+        width: 99%;
+        padding:0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img"
+                            "text";
+        grid-gap: 1rem;
+    }
+    .opaco{
+        background-color: rgba(8, 8, 8, 0.4);
+        width: 100%;  
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .alinbajo{
+        align-self: flex-end;
+    }
+    .alin2{
+        align-self: flex-start;
+    }
+    
+
+}
+
+#imgProxPlat{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 1%;
+    grid-area:img;
+    margin: auto;
+}
+#descripcionPlato{ 
+    background: url(../Imágenes/pan2.JPG) whitesmoke;
+    background-size: cover;
+    background-position: center;
+    border: 0.3rem double black;    
+    border-radius: 5%;
+    background-color: rgb(245, 245, 245, 0.9);
+    grid-area: text;
+    /* font-weight: bolder; */
+}
+.opaco{
+    background-color: rgba(8, 8, 8, 0.4);
+    width: 100%;  
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-left: 1rem;
+    color: whitesmoke;    
+}
+.negro{
+    color:black;
+}
+.plato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 1px 2px rgb(245, 245, 245, 0.5);
+}
+#plat1{
+    grid-area: plat1;
+}
+#plat2{
+    grid-area: plat2;
+}
+#plat3{
+    grid-area: plat3;
+}
+#plat4{
+    grid-area: plat4;
+}
+.imgPlato{
+    width: 90%;
+    height: auto;
+    border-radius: 1%;
+}
+.blanco{
+    color: whitesmoke;
+}
+.imgPeli{
+    width: 100%;
+    height: 100%;
+    
+}
+.candidata{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     border-top: 0.2rem dotted whitesmoke;
+    border-bottom: 0.2rem dotted whitesmoke; */
+    animation-name: cambiaBorde;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 1s; */
+    animation-timing-function: linear;
+    box-sizing: border-box;
+    
+}
+@keyframes cambiaBorde {
+    0%{border-top: 0.2rem dotted whitesmoke; border-bottom: 0.2rem dotted whitesmoke;  border-left: 0.1rem dotted rgb(255, 165, 0, 0); border-right: 0.1rem dotted rgb(255, 165, 0, 0);}
+    50% {border-top: 0.2rem dotted whitesmoke; border-bottom: 0.2rem dotted whitesmoke; border-left: 0.1rem dotted rgb(255, 165, 0, 0); border-right: 0.1rem dotted rgb(255, 165, 0, 0);}
+    100% {border-top: 0.2rem dotted orange; border-bottom: 0.2rem dotted orange; border-left: 0.1rem dotted orange; border-right: 0.1rem dotted orange; }
+}

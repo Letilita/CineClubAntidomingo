@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cine Club AntiDomingo</title> 
+  
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+      <link rel="stylesheet" href="CSS\estilos.css">
+      <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Frijole&family=Slackey&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+     </head>
+
+<body>
+   <div class="contenedor6">
+      <header class="encabezado"> 
+      
+         <div id="titulo">
+            <h1  >Cine Club AntiDomingo</h1> 
+         </div>
+      
+      </header>
+
+      <nav class="navegador">
+         <a class="nav" href="index.html" id="a1">¿Qué es? </a>  
+         <a class="nav" href="Programacion.html" id="a2">Programación </a>
+         <a class="nav" href="Menu.html" id="a3">La Cocina </a>  
+         <a class="nav" href="Reserva.html" id="a5">Reserva</a> 
+         <a class="nav" href="Contacto.html" id="a4">Contacto</a>
+      </nav>
+
+      
+      <h2 id="tit">Votá</h2>
+
+      <div class="candidata" id="cand1">
+         <img class="imgPeli" src="Imágenes\Dogville.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand2">
+         <img class="imgPeli" src="Imágenes\el_dia_de_la_bestia.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand3">
+         <img class="imgPeli" src="Imágenes\xxy.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand4">
+         <img class="imgPeli" src="Imágenes\llegada.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand5">
+         <img class="imgPeli" src="Imágenes\bastardos.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand5">
+         <img class="imgPeli" src="Imágenes\bastardos.jpg" alt="Error al cargar imagen">
+      </div>
+      <div class="candidata" id="cand6">
+         <img class="imgPeli" src="Imágenes\primavera.jpg" alt="Error al cargar imagen">
+      </div>
+
+      <div class="form">
+         <form action="show_data.html" target="_blank">
+            <fieldset id="for1">
+               <legend>Datos personales:</legend> 
+               <label for="nombre">Nombre </label>
+               <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required autocomplete="off">
+               <label for="email">Correo electrónico </label>
+               <input type="email" id="email" name="email" placeholder="Ingresá tu dirección de mail" required autocomplete="off">
+               <label for="tel">Teléfono</label>
+               <input type="tel" id=tel name="tel" placeholder="Ingresá tu nro de teléfono" required autocomplete="off">
+               <br>
+            </fieldset>
+            <p></p> <br>
+            <fieldset id="for2">
+               <legend><b></b>La peli: </b></legend> 
+               <label for="peli">¿Qué peli querés votar?</label>
+               <select id="votada" name="votada"  placeholder="Seleccioná la peli que querés votar" required>
+                  <option value="">Votación</option>     
+                  <option value="Dogville">Dogville</option>
+                  <option value="Alex">El Día de la Bestia</option>
+                  <option value="Argentino">XXY</option>
+                  <option value="Ficcion">La Llegada</option>
+                  <option value="Tarantino">Bastardos sin Gloria</option>
+                  <option value="KimKiDuk">Primavera, Verano, Otoño, Invierno... y otra vez Primavera</option>
+               </select>
+               <p></p> <br>
+               
+               <br>
+               <label for="comentario">Podés dejarnos un comentario</label>
+               <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tus comentario" required></textarea>
+   
+            </fieldset>   <p></p>
+            <br>
+   
+            <input type="submit" name="" value="Enviar" class="botonEnviar">    
+            <br>
+   
+         </form>
+      
+      </div>
+      <p></p>
+           
+
+      <footer >
+         <br>
+         <p>Seguinos en: </p>
+         <p>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+         </p>  <br>
+
+      </footer>
+   
+   </div>
+ 
+</body>
+</html>
