@@ -32,7 +32,7 @@
       
       <h2 id="tit">Reserva</h2>
       <div class="form">
-         <form action="show_data.html" target="_blank">
+         <form action="index.php" method="get">
             <fieldset id="for1">
                <legend>Datos personales:</legend> 
                <label for="nombre">Nombre </label>
@@ -76,17 +76,17 @@
                </div>
             <br>
                <div>
-                  <label for="bebida">¿Qué querés tomar? </label> <br>
-                  <input type="checkbox" id="bebida1" name="bebida" value="cerveza" required> 
+                  <label for="bebida">¿Qué querés tomar? </label> <br>                 <!-- Faltaría hacer requerida está selección -->
+                  <input type="checkbox" id="bebida1" name="bebida" value="cerveza" > 
                   <label class="blanco" for="bebida1">Cerveza</label><br>
-                  <input type="checkbox" id="bebida2" name="bebida" value="vino"> 
+                  <input type="checkbox" id="bebida2" name="bebida" value="vino" > 
                   <label class="blanco" for="bebida2">Vino</label> <br>
-                  <input type="checkbox" id="bebida3" name="bebida" value="sinalcohol"> 
+                  <input type="checkbox" id="bebida3" name="bebida" value="sinalcohol" > 
                   <label class="blanco" for="bebida3">Bebida sin alcohol</label>
                </div>
                <br>
                <label for="comentario">Podés dejarnos un comentario</label>
-               <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tus comentario" required></textarea>
+               <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tus comentario"></textarea>
    
             </fieldset>   <p></p>
             <br>
