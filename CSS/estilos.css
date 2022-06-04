@@ -453,7 +453,7 @@ nav a:hover{
 
 /* Defino las áreas que ocuparán cada una de las tarjetas */
 #card1{
-    background: url("./Imágenes/marquesina2.JPG") black;
+    background: url("marquesina2.JPG") black;
     background-size: cover;
     background-position: center ;
     min-height: 40vh; 
